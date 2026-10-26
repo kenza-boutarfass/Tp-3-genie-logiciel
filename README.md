@@ -15,6 +15,34 @@ Application de gestion des absences universitaires : API Express/SQLite et appli
 - Expo Go ou un simulateur Android/iOS pour l’application mobile.
 - Sur Windows, `better-sqlite3` peut nécessiter les outils de compilation C++ si aucun binaire précompilé n’est disponible.
 
+## Guide d’exécution rapide
+
+1. Ouvrez un terminal PowerShell dans le dossier `backend` et installez les dépendances :
+
+```powershell
+cd backend
+npm install
+npm run seed
+```
+
+2. Démarrez l’API :
+
+```powershell
+npm start
+```
+
+3. Ouvrez un second terminal dans le dossier `mobile` pour installer les dépendances et lancer l’application :
+
+```powershell
+cd mobile
+npm install
+npm start
+```
+
+4. Vérifiez le service de santé dans le navigateur : `http://localhost:5001/api/health`.
+
+L’application mobile utilisera par défaut l’API locale sur `http://10.0.2.2:5001/api` pour un émulateur Android ou `http://localhost:5001/api` pour un simulateur iOS. Pour la version web, exécutez `npm run build:web` dans `mobile`.
+
 ## Installation
 
 Dans un terminal PowerShell ouvert à la racine du projet :
