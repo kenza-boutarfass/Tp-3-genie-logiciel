@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Présences",
+    "slug": "presences-universite",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F5F7FA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "fr.universite.presences"
+    },
+    "android": {
+      "package": "fr.universite.presences",
+      "permissions": [
+        "NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker",
+      "expo-notifications",
+      "expo-font"
+    ],
+    "extra": {
+      "apiUrl": "http://192.168.1.139:5001/api"
+    }
+  }
+}
